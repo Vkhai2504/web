@@ -1,0 +1,98 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.account-dashboard {
+    text-align: center;
+}
+
+    .account-dashboard ul {
+        list-style-type: none;
+        text-align: center;
+        max-width: 450px;
+        padding: 0px;
+        margin: auto;
+    }
+
+.account-dashboard ul li{
+    float: left;
+    margin: 5px;
+    padding: 8px;
+}
+
+    .account-dashboard ul li .text, .account-dashboard ul li a {
+        text-align: center;
+    }
+
+.footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+    .footer ul li {
+        float: left;
+        margin: 5px;
+        padding: 5px;
+    }
+
+img{ max-width: 100% !important;
+    text-align: center;
+    height: auto;
+}
+
+.header-title a {
+    color: #ffffff;
+}
+
+.min-width-300 {
+    min-width: 300px !important;
+}
+
+.containerwrap{
+    position:relative;
+            
+}
+.custom-modal {
+    width: 100%!important; /* Use !important in case you want to override another val*/
+    height: 100%;
+    position: fixed; /*You can use fixed too*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #f9f9f9;
+    opacity: 0.8;
+}
+.custom-modal h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
